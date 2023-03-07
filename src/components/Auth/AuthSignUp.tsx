@@ -1,12 +1,10 @@
-import { useState } from "react";
-
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from 'yup';
 
-import { Button, Input, InputGroup, InputRightElement, Stack, Text } from "@chakra-ui/react";
+import { Button, Stack } from "@chakra-ui/react";
 
-import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
+import CustomFormControl from "components/form/formComponents/CustomFormControl";
 
 interface IInputs {
     login: string;
@@ -26,34 +24,27 @@ const AuthSignUp = () => {
     });
     const onSubmit: SubmitHandler<IInputs> = data => console.log("formData", data)
 
-    const [showPass, setShowPass] = useState(false);
-
-    const hangleShowPass = () => setShowPass(!showPass);
-
     console.log(watch("login"))
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} >
             <Stack spacing={3}>
-                <Text> Введите email {errors.login && <span> -- {errors.login.message}</span>} </Text>
-
-                <Input {...register("login")}
+                <CustomFormControl
+                    errors={errors}
+                    register={register}
+                    name="login"
                     placeholder="Введите email"
-                    isInvalid={errors.password && true}
+                    label="Введите email"
                 />
-                <Text> Введите пароль {errors.password && <span> -- {errors.password.message}</span>}</Text>
-                <InputGroup>
-                    <Input {...register("password")}
-                        placeholder="Введите пароль"
-                        type={showPass ? "text" : "password"}
-                        isInvalid={errors.password && true}
-                    />
-                    <InputRightElement width='4.5rem'>
-                        <Button h='1.75rem' size='sm' onClick={hangleShowPass}>
-                            {showPass ? <ViewOffIcon /> : <ViewIcon />}
-                        </Button>
-                    </InputRightElement>
-                </InputGroup>
+
+                <CustomFormControl
+                    errors={errors}
+                    register={register}
+                    name="password"
+                    placeholder="Введите пароль"
+                    label="Введите пароль"
+                    type="password"
+                />
 
                 <Button colorScheme="green" type="submit">
                     Зарегистрироваться
