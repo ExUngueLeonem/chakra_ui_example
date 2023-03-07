@@ -1,12 +1,11 @@
-import { WarningIcon } from '@chakra-ui/icons';
 import { Text } from '@chakra-ui/react';
-import React from 'react';
-import { palette } from 'styles/consts';
 
+import { WarningIcon } from '@chakra-ui/icons';
+
+import { palette } from 'styles/themeStyle';
 import styles from './InputError.module.scss';
 
 const InputError = ({ message }: { message?: string }) => {
-    
     return (
         <div className={styles.wrapper}>
             <WarningIcon color={palette.error} />

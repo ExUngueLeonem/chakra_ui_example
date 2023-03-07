@@ -1,6 +1,5 @@
 import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Code, Grid, Link as ChakraLink, Text, VStack } from "@chakra-ui/react";
 import Layout from "Layout";
-import { ColorModeSwitcher } from "../ColorModeSwitcher";
 
 import { Logo } from "../components/Logo";
 import { ArrowRightIcon } from "@chakra-ui/icons";
@@ -10,7 +9,6 @@ const HomePage = () => {
         <Layout>
             <Box textAlign="center" fontSize="x1">
                 <Grid minH="100%" p={3}>
-                    <ColorModeSwitcher justifySelf="flex-end" />
                     <VStack spacing={8}>
                         <Breadcrumb separator={<ArrowRightIcon />} spacing="50px">
                             <BreadcrumbItem>
@@ -41,10 +39,6 @@ const HomePage = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <div style={{ width: "300px", height: "100px", backgroundColor: "blue" }}>
-
-                            </div>
-
                             Learn Chakra
                         </ChakraLink>
                     </VStack>
