@@ -1,20 +1,18 @@
 import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Code, Grid, Link as ChakraLink, Text, VStack } from "@chakra-ui/react";
 import Layout from "Layout";
-import { useState } from "react";
-import { FaChevronRight } from "react-icons/fa";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
+
 import { Logo } from "../components/Logo";
+import { ArrowRightIcon } from "@chakra-ui/icons";
 
 const HomePage = () => {
-    const [popup, setPopup] = useState({ formType: '', payload: null })
-
     return (
         <Layout>
             <Box textAlign="center" fontSize="x1">
-                <Grid minH="100vh" p={3}>
+                <Grid minH="100%" p={3}>
                     <ColorModeSwitcher justifySelf="flex-end" />
                     <VStack spacing={8}>
-                        <Breadcrumb separator={<FaChevronRight />} spacing="50px">
+                        <Breadcrumb separator={<ArrowRightIcon />} spacing="50px">
                             <BreadcrumbItem>
                                 <BreadcrumbLink href="#"> root </BreadcrumbLink>
                             </BreadcrumbItem>
