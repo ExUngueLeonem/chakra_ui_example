@@ -1,4 +1,4 @@
-import { IApiData } from "types";
+import { IApiData, ICard } from "types";
 import { apiConfig } from "./config";
 import { HttpClient } from "./HttpClient";
 
@@ -17,6 +17,6 @@ export class MainApi extends HttpClient {
         return this.classInstance;
     }
 
-    public getApi = () => this.instance.get<IApiData>('')
-
+    public getApi = () => this.instance.get<IApiData>('/story')
+    public getCards = () => this.instance.get<ICard[]>('/cards')
 }

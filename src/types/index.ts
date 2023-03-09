@@ -55,3 +55,10 @@ export interface IComponents {
     header: () => JSX.Element;
 }
 
+export interface ICard {
+    _uid: string;
+    name: string;
+    price: number;
+    imageSrc: string;
+}
+

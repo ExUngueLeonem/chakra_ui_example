@@ -90,5 +90,43 @@
         "lang": "default",
         "path": null,
         "translated_slugs": []
-    }
+    },
+    "cards": [
+        {
+            "_uid": "42c4057a-44b3-4886-befb-85ff1868c4e7",
+            "name": "42c4868c4e7",
+            "price": 1273,
+            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+        },
+        {
+            "_uid": "42c4e57a-44b3-4886-0efb-85ff1868c4e7",
+            "name": "42c4868c4e7",
+            "price": 1283,
+            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+        },
+        {
+            "_uid": "42c4e57a-44b3-4886-befb-85ff1808c4e7",
+            "name": "42c4868c4e7",
+            "price": 1623,
+            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+        },
+        {
+            "_uid": "42c4e57a-44b3-4086-befb-85ff1868c4e7",
+            "name": "42c4868c4e7",
+            "price": 1423,
+            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+        },
+        {
+            "_uid": "42c4057a-44b3-4886-befb-85ff1868c0e7",
+            "name": "42c4868c4e7",
+            "price": 1223,
+            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+        },
+        {
+            "_uid": "4294e57a-44b3-4986-befb-85ff1868c4e7",
+            "name": "42c4868c4e7",
+            "price": 153,
+            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+        },
+    ]
 }
