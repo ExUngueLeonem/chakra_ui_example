@@ -2,15 +2,17 @@ import { Avatar, Box, Button, Flex, Grid, GridItem, HStack, useColorModeValue } 
 import { ColorModeSwitcher } from "ColorModeSwitcher";
 import { useNavigate } from "react-router-dom";
 import { palette } from "styles/themeStyle";
+import { IApiContent } from "types";
 
-const Header = () => {
+const Header = ({ block = { payload: {} } }: { block?: IApiContent<any> | { payload: {} } }) => {
     const themeText = useColorModeValue("light", "dark")
     const navigate = useNavigate()
 
     const onLogoutHadler = () => navigate("/")
+    const config = block.payload.config
 
     return (
-        <Box bgColor={palette[themeText].bgBlue} h="100%" p="5">
+        <Box bgColor={palette[themeText].bgBlue} maxH="80px" p="3" {...config}>
             <Grid
                 h="100%"
                 gridTemplateColumns="360px 1fr 360px"

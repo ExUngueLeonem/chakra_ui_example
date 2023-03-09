@@ -10,71 +10,52 @@
             "_uid": "31b755c7-a585-42f6-97f4-beadd42d7ae8",
             "body": [
                 {
-                    "_uid": "15c5e83a-69d5-4bd0-85c8-d8e5df7c9a66",
+                    "_uid": "15c5e83a-69d5-4bd0-85c8-d8e5f7c9a66",
                     "component": "header",
                     "payload": {
                         "title": "Header title"
                     },
-                    "nestedComponents": [
-                        {
-                            "_uid": "15c5e23a-69d5-4bd0-85c8-d8e5df7c9a66",
-                            "component": "header",
-                            "payload": null,
-                            "nestedComponents": null
-                        }
-                    ]
+                    "nestedComponents": []
                 },
                 {
-                    "_uid": "ff225b73-b136-4bb8-87c7-beaf5a15fc0d",
-                    "title": "Bar",
-                    "component": "bar",
+                    "_uid": "67e57f81-87c1-4bd6-b17b-ecc4142d8d6",
+                    "component": "wrapContainer",
                     "payload": {
-                        "title": "Header title"
+                        "title": "Header title",
+                        "config": {
+                            "maxW": "8xl",
+                            "bg": "green.500",
+                            "p": 50
+                        }
                     },
                     "nestedComponents": [
                         {
-                            "_uid": "15c5e23a-69d5-4bd0-85c8-d8e5df7c9a66",
-                            "component": "header",
-                            "payload": null,
-                            "nestedComponents": null
-                        }
-                    ]
-                },
-                {
-                    "_uid": "67e57f81-87c1-4bd6-b17b-eccc4142d8d6",
-                    "headline": "Another headline",
-                    "component": "foo",
-                    "payload": {
-                        "title": "Header title"
-                    },
-                    "nestedComponents": [
-                        {
-                            "_uid": "15c5e23a-69d5-4bd0-85c8-d8e5df7c9a66",
-                            "component": "header",
-                            "payload": null,
-                            "nestedComponents": null
-                        }
-                    ]
-                },
-                {
-                    "_uid": "67e57f81-8723-4bd6-b17b-eccc4142d8d6",
-                    "headline": "Another headline",
-                    "component": "unknown_123",
-                    "payload": {
-                        "title": "Header title"
-                    },
-                    "nestedComponents": [
-                        {
-                            "_uid": "15c5e23a-69d5-4bd0-85c8-d8e5df7c9a66",
-                            "component": "header",
-                            "payload": null,
-                            "nestedComponents": null
+                            "_uid": "ff225b73-b136-4bb8-87c7-bea35a15fc0d",
+                            "component": "cardList",
+                            "payload": {
+                                "title": "CardList title",
+                                "config": {
+                                    "gridGap": 10
+                                }
+                            },
+                            "nestedComponents": []
                         }
                     ]
                 }
             ],
             "component": "page"
         },
+        "config": {
+            "h": "100vh",
+            "bgColor": "green.50",
+            "display": "flex" ,
+            "flexDirection": "column"
+        },
+
+
+
+
+
         "slug": "demo",
         "full_slug": "demo",
         "default_full_slug": null,
@@ -84,7 +65,7 @@
         "is_startpage": false,
         "parent_id": 0,
         "meta_data": null,
-        "group_id": "42c4e57a-44b3-4886-befb-85ff1868c4e7",
+        "group_id": "42c4e57a-44b3-486-befb-85ff1868c4e7",
         "first_published_at": "2019-08-22T10:24:27.898Z",
         "release_id": null,
         "lang": "default",
@@ -93,40 +74,40 @@
     },
     "cards": [
         {
-            "_uid": "42c4057a-44b3-4886-befb-85ff1868c4e7",
-            "name": "42c4868c4e7",
+            "_uid": "42c40557a-44b3-4886-befb-85ff68c4e71",
+            "name": "42c41238628c4e7",
             "price": 1273,
             "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
         },
         {
-            "_uid": "42c4e57a-44b3-4886-0efb-85ff1868c4e7",
-            "name": "42c4868c4e7",
+            "_uid": "42c4e457a-44b3-4886-0efb-85ff186c4e72",
+            "name": "423c4123868c4e7",
             "price": 1283,
             "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
         },
         {
-            "_uid": "42c4e57a-44b3-4886-befb-85ff1808c4e7",
-            "name": "42c4868c4e7",
+            "_uid": "42c46e5a-44b3-4886-befb-85f1808c4e73",
+            "name": "422c48xcq68c4e7",
             "price": 1623,
             "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
         },
         {
-            "_uid": "42c4e57a-44b3-4086-befb-85ff1868c4e7",
-            "name": "42c4868c4e7",
+            "_uid": "42ce757a-44b3-4086-befb-85f1868c4e74",
+            "name": "42c428dasd68c4e7",
             "price": 1423,
             "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
         },
         {
-            "_uid": "42c4057a-44b3-4886-befb-85ff1868c0e7",
-            "name": "42c4868c4e7",
+            "_uid": "42c4557a-44b3-4886-befb-85ff168c0e75",
+            "name": "42c2486238c4e7",
             "price": 1223,
             "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
         },
         {
-            "_uid": "4294e57a-44b3-4986-befb-85ff1868c4e7",
-            "name": "42c4868c4e7",
+            "_uid": "4294757a-44b3-4986-befb-85ff868c4e76",
+            "name": "42234c486f8c4e7",
             "price": 153,
             "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
-        },
+        }
     ]
 }

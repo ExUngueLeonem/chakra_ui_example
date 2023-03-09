@@ -12,7 +12,7 @@ export interface IApiData {
         body: IApiContent<any>[];
         component: string;
     },
-
+    config: any;
     // created_at: string | null,
     // published_at: string | null,
     // alternates: [],
@@ -35,24 +35,23 @@ export interface IApiData {
 
 export interface IApiContent<T> {
     _uid: string,
-    component:
-    "foo" |
-    "bar" |
-    "header",
+    component: any;//keyof IComponents;
     payload: T;
-    nestedComponents: IApiContent<any>[]
+    nestedComponents: any // ApiContent<any>[]
 }
 
-export interface IComponents {
-    foo: ({ block }: { block: IApiContent<any>; }) => JSX.Element;
-    bar: ({ block }: { block: IApiContent<any>; }) => JSX.Element;
-    header: () => JSX.Element;
-}
+// export interface IComponents {
+//     foo: ({ block }: { block: IApiContent<any>; }) => JSX.Element;
+//     bar: ({ block }: { block: IApiContent<any>; }) => JSX.Element;
+//     header: () => JSX.Element;
+// }
 
 export interface IComponents {
-    foo: ({ block }: { block: IApiContent<any>; }) => JSX.Element;
-    bar: ({ block }: { block: IApiContent<any>; }) => JSX.Element;
-    header: () => JSX.Element;
+    // foo: ({ block }: { block: IApiContent<any>; }) => JSX.Element;
+    // bar: ({ block }: { block: IApiContent<any>; }) => JSX.Element;
+    header: any;
+    cardList: any;
+    wrapContainer: any;
 }
 
 export interface ICard {
@@ -61,4 +60,3 @@ export interface ICard {
     price: number;
     imageSrc: string;
 }
-
