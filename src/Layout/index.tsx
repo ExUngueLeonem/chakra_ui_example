@@ -1,7 +1,7 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import Header from "components/Header";
 import NavBar from "components/NavBar";
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 
 const Layout = ({ children }: { children: ReactNode }) => {
 

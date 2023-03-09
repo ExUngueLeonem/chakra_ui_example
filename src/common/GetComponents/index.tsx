@@ -1,15 +1,5 @@
-import CardList from "components/CardList";
-import Header from "components/Header";
-import { WrapContainer } from "components/WrapContainer";
 import React from "react";
-import { IApiContent } from "types";
 import * as Chakra from "@chakra-ui/react";
-
-const Components: any = {
-  header: Header,
-  cardList: CardList,
-  wrapContainer: WrapContainer,
-};
 
 type ComponentType =
   | "Accordion"
