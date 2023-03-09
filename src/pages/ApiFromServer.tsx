@@ -1,34 +1,28 @@
 import { MainApi } from "http/MainApi";
 import { useEffect, useState } from "react";
 import { IApiData } from "types";
-import { GetComponents } from 'common/GetComponents';
+import { GetComponents } from "common/GetComponents";
 import { Box } from "@chakra-ui/react";
 
 const ApiFromServer = () => {
-    const [data, setData] = useState<IApiData>();
-    const config = data?.config
+  const [data, setData] = useState<IApiData>();
+  const config = data?.config;
 
-    useEffect(() => {
-        MainApi.getInstance().getApi().then(({ data }) => { setData(data) })
-    }, [])
+  useEffect(() => {
+    MainApi.getInstance()
+      .getApi()
+      .then(({ data }) => {
+        setData(data);
+      });
+  }, []);
 
-    console.log(data)
+  console.log(data);
 
-    return (
-        <Box bgColor="grey" {...config}>
-            {data &&
-                data.content.body.map(block => GetComponents(block))
-            }
-        </Box>
-    );
+  return (
+    <Box bgColor="grey" {...config}>
+      {data && GetComponents(data.content)}
+    </Box>
+  );
 };
 
 export default ApiFromServer;
-
-
-
-
-
-
-
-

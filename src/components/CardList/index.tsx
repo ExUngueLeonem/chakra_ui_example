@@ -20,6 +20,7 @@ const CardList = ({ block }: { block: IApiContent<any> }) => {
             gridGap={40}
             {...config}
         >
+            
             {cards.map(item => <CardItem key={item._uid} item={item} />)}
         </Grid>
     );

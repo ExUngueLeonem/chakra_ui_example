@@ -1,113 +1,117 @@
 {
-    "story": {
-        "name": "demo",
-        "created_at": "2019-08-22T10:23:59.986Z",
-        "published_at": "2019-08-22T10:24:27.898Z",
-        "alternates": [],
-        "id": 2069783,
-        "uuid": "728a2780-f3bc-49a5-9d95-bcfd0caf7fda",
-        "content": {
-            "_uid": "31b755c7-a585-42f6-97f4-beadd42d7ae8",
-            "body": [
+  "story": {
+    "name": "demo",
+    "created_at": "2019-08-22T10:23:59.986Z",
+    "published_at": "2019-08-22T10:24:27.898Z",
+    "alternates": [],
+    "id": 2069783,
+    "uuid": "728a2780-f3bc-49a5-9d95-bcfd0caf7fda",
+    "content": {
+      "_uid": "root",
+      "component": "Box",
+      "payload": {},
+      "nestedComponents": [
+        {
+          "_uid": "FLEX.LF12M8KBCZTL2",
+          "component": "Flex",
+          "payload": {},
+          "nestedComponents": [
+            {
+              "_uid": "FLEX.LF12MCRJWUNYX",
+              "component": "Flex",
+              "payload": {},
+              "nestedComponents": [
                 {
-                    "_uid": "15c5e83a-69d5-4bd0-85c8-d8e5f7c9a66",
-                    "component": "header",
-                    "payload": {
-                        "title": "Header title"
-                    },
-                    "nestedComponents": []
+                  "_uid": "ICON.LF12MR9RH88IM",
+                  "component": "Icon",
+                  "payload": { "icon": "AtSignIcon", "boxSize": "24" },
+                  "nestedComponents": []
                 },
                 {
-                    "_uid": "67e57f81-87c1-4bd6-b17b-ecc4142d8d6",
-                    "component": "wrapContainer",
-                    "payload": {
-                        "title": "Header title",
-                        "config": {
-                            "maxW": "8xl",
-                            "bg": "green.500",
-                            "p": 50
-                        }
+                  "_uid": "GRID.LF12MW8NPLV4R",
+                  "component": "Grid",
+                  "payload": { "templateColumns": "repeat(1, 1fr)", "gap": "1" },
+                  "nestedComponents": [
+                    {
+                      "_uid": "TEXT.LF12MZZDSEBTK",
+                      "component": "Text",
+                      "payload": { "children": "FOOODOF", "textAlign": "left", "fontWeight": "bold", "fontSize": "4xl" },
+                      "nestedComponents": []
                     },
-                    "nestedComponents": [
-                        {
-                            "_uid": "ff225b73-b136-4bb8-87c7-bea35a15fc0d",
-                            "component": "cardList",
-                            "payload": {
-                                "title": "CardList title",
-                                "config": {
-                                    "gridGap": 10
-                                }
-                            },
-                            "nestedComponents": []
-                        }
-                    ]
+                    {
+                      "_uid": "TEXT.LF12N99A03F83",
+                      "component": "Text",
+                      "payload": { "children": "RESTORAUNT AND BAR" },
+                      "nestedComponents": []
+                    }
+                  ]
                 }
-            ],
-            "component": "page"
-        },
-        "config": {
-            "h": "100vh",
-            "bgColor": "green.50",
-            "display": "flex" ,
-            "flexDirection": "column"
-        },
-
-
-
-
-
-        "slug": "demo",
-        "full_slug": "demo",
-        "default_full_slug": null,
-        "sort_by_date": null,
-        "position": -483300,
-        "tag_list": [],
-        "is_startpage": false,
-        "parent_id": 0,
-        "meta_data": null,
-        "group_id": "42c4e57a-44b3-486-befb-85ff1868c4e7",
-        "first_published_at": "2019-08-22T10:24:27.898Z",
-        "release_id": null,
-        "lang": "default",
-        "path": null,
-        "translated_slugs": []
-    },
-    "cards": [
-        {
-            "_uid": "42c40557a-44b3-4886-befb-85ff68c4e71",
-            "name": "42c41238628c4e7",
-            "price": 1273,
-            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
-        },
-        {
-            "_uid": "42c4e457a-44b3-4886-0efb-85ff186c4e72",
-            "name": "423c4123868c4e7",
-            "price": 1283,
-            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
-        },
-        {
-            "_uid": "42c46e5a-44b3-4886-befb-85f1808c4e73",
-            "name": "422c48xcq68c4e7",
-            "price": 1623,
-            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
-        },
-        {
-            "_uid": "42ce757a-44b3-4086-befb-85f1868c4e74",
-            "name": "42c428dasd68c4e7",
-            "price": 1423,
-            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
-        },
-        {
-            "_uid": "42c4557a-44b3-4886-befb-85ff168c0e75",
-            "name": "42c2486238c4e7",
-            "price": 1223,
-            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
-        },
-        {
-            "_uid": "4294757a-44b3-4986-befb-85ff868c4e76",
-            "name": "42234c486f8c4e7",
-            "price": 153,
-            "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+              ]
+            },
+            { "_uid": "FLEX.LF12MEKJJGZZ4", "component": "Flex", "payload": {}, "nestedComponents": [] }
+          ]
         }
-    ]
+      ]
+    },
+    "config": {
+      "h": "100vh",
+      "bgColor": "green.50",
+      "display": "flex",
+      "flexDirection": "column"
+    },
+
+    "slug": "demo",
+    "full_slug": "demo",
+    "default_full_slug": null,
+    "sort_by_date": null,
+    "position": -483300,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": null,
+    "group_id": "42c4e57a-44b3-486-befb-85ff1868c4e7",
+    "first_published_at": "2019-08-22T10:24:27.898Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "translated_slugs": []
+  },
+  "cards": [
+    {
+      "_uid": "42c40557a-44b3-4886-befb-85ff68c4e71",
+      "name": "42c41238628c4e7",
+      "price": 1273,
+      "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+    },
+    {
+      "_uid": "42c4e457a-44b3-4886-0efb-85ff186c4e72",
+      "name": "423c4123868c4e7",
+      "price": 1283,
+      "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+    },
+    {
+      "_uid": "42c46e5a-44b3-4886-befb-85f1808c4e73",
+      "name": "422c48xcq68c4e7",
+      "price": 1623,
+      "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+    },
+    {
+      "_uid": "42ce757a-44b3-4086-befb-85f1868c4e74",
+      "name": "42c428dasd68c4e7",
+      "price": 1423,
+      "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+    },
+    {
+      "_uid": "42c4557a-44b3-4886-befb-85ff168c0e75",
+      "name": "42c2486238c4e7",
+      "price": 1223,
+      "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+    },
+    {
+      "_uid": "4294757a-44b3-4986-befb-85ff868c4e76",
+      "name": "42234c486f8c4e7",
+      "price": 153,
+      "imageSrc": "https://placehold.jp/3d4070/ffffff/150x150.png"
+    }
+  ]
 }
