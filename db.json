@@ -11,18 +11,66 @@
             "body": [
                 {
                     "_uid": "15c5e83a-69d5-4bd0-85c8-d8e5df7c9a66",
-                    "headline": "Foo",
-                    "component": "foo"
+                    "component": "header",
+                    "payload": {
+                        "title": "Header title"
+                    },
+                    "nestedComponents": [
+                        {
+                            "_uid": "15c5e23a-69d5-4bd0-85c8-d8e5df7c9a66",
+                            "component": "header",
+                            "payload": null,
+                            "nestedComponents": null
+                        }
+                    ]
                 },
                 {
                     "_uid": "ff225b73-b136-4bb8-87c7-beaf5a15fc0d",
                     "title": "Bar",
-                    "component": "bar"
+                    "component": "bar",
+                    "payload": {
+                        "title": "Header title"
+                    },
+                    "nestedComponents": [
+                        {
+                            "_uid": "15c5e23a-69d5-4bd0-85c8-d8e5df7c9a66",
+                            "component": "header",
+                            "payload": null,
+                            "nestedComponents": null
+                        }
+                    ]
                 },
                 {
                     "_uid": "67e57f81-87c1-4bd6-b17b-eccc4142d8d6",
                     "headline": "Another headline",
-                    "component": "foo"
+                    "component": "foo",
+                    "payload": {
+                        "title": "Header title"
+                    },
+                    "nestedComponents": [
+                        {
+                            "_uid": "15c5e23a-69d5-4bd0-85c8-d8e5df7c9a66",
+                            "component": "header",
+                            "payload": null,
+                            "nestedComponents": null
+                        }
+                    ]
+                },
+                {
+                    "_uid": "67e57f81-8723-4bd6-b17b-eccc4142d8d6",
+                    "headline": "Another headline",
+                    "component": "unknown_123",
+                    "payload": {
+                        "title": "Header title"
+                    },
+                    "nestedComponents": [
+                        {
+                            "_uid": "15c5e23a-69d5-4bd0-85c8-d8e5df7c9a66",
+                            "component": "header",
+                            "payload": null,
+                            "nestedComponents": null
+                        }
+                    ]
                 }
             ],
             "component": "page"

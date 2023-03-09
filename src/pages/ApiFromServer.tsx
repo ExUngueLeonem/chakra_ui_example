@@ -1,28 +1,39 @@
+import React from 'react';
 import { MainApi } from "http/MainApi";
 import { useEffect, useState } from "react";
-import { IApiData } from "types";
+import { IApiContent, IApiData } from "types";
+import Header from 'components/Header';
 
-const Foo = ({ block }: { block: string }) => {
+interface IFooPayloadProps {
+    title: string
+}
+
+const Foo = ({ block }: { block: IApiContent<IFooPayloadProps> }) => {
     return (
         <div>
-            Foo
-            {block}
+            {block.payload.title}
+            {block.component}
         </div>
     );
 };
 
-const Bar = ({ block }: { block: string }) => {
+interface IBarPayloadProps {
+    name: string
+}
+
+const Bar = ({ block }: { block: IApiContent<IBarPayloadProps> }) => {
     return (
         <div>
-            Bar
-            {block}
+            {block.payload.name}
+            {block.component}
         </div>
     );
 };
 
-const Components = {
+const Components: any = {
     foo: Foo,
     bar: Bar,
+    header: Header,
 }
 
 const ApiFromServer = () => {
@@ -36,7 +47,7 @@ const ApiFromServer = () => {
     return (
         <div>
             {data &&
-                data.content.body.map(block => block.component)
+                data.content.body.map(block => GetComponents(block))
             }
         </div>
     );
@@ -44,19 +55,21 @@ const ApiFromServer = () => {
 
 export default ApiFromServer;
 
-//https://codesandbox.io/s/dynamic-components-from-json-with-react-ybq27?fontsize=14&file=/src/components.js:174-488
-const GetComponents = ({ block }: { block: any }) => {
+
+const GetComponents = (block: IApiContent<any>) => {
+    console.log("block", block)
     if (typeof Components[block.component] !== "undefined") {
         return React.createElement(Components[block.component], {
-          key: block._uid,
-          block: block
+            key: block._uid,
+            block: block
         });
-      }
-      return React.createElement(
+    }
+    return React.createElement(
         () => <div>The component {block.component} has not been created yet.</div>,
         { key: block._uid }
-      );
+    );
 };
+
 
 
 

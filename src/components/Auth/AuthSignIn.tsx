@@ -23,7 +23,7 @@ const AuthSignIn = () => {
     });
     const onSubmit: SubmitHandler<IInputs> = data => {
         console.log("formData", data);
-        navigate("/home");
+        navigate("/api");
     }
 
     const navigate = useNavigate();
